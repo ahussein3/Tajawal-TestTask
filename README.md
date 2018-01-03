@@ -21,9 +21,9 @@ as simple as:
 /**************************************************************************/
 
 
-1- As you can see i have used this starter kit to rapid the development regarding the test task. 
+1. As you can see i have used this starter kit to rapid the development regarding the test task. 
 as you can see it's well organized.
-2- mainly that how i organize files and assets in real world projects
-3- i have tried to utilize most of the time to write modular maintainable code. and I'm sure it can be more modular and maintainable.
-4- I have taken care of the code being responsive.
-5- the search section didn't use the same icons as it image as a whole couldn't extract the same calender icons so i choose the most alike one.
+2. mainly that how i organize files and assets in real world projects
+3. i have tried to utilize most of the time to write modular maintainable code. and I'm sure it can be more modular and maintainable.
+4. I have taken care of the code being responsive.
+5. the search section didn't use the same icons as it image as a whole couldn't extract the same calender icons so i choose the most alike one.
