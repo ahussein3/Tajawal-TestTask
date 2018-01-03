@@ -1,0 +1,1028 @@
+.clear:before, .clear:after {
+  content: ' ';
+  display: table; }
+
+.clear {
+  *zoom: 1; }
+  .clear:after {
+    clear: both; }
+
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  color: #444;
+  transition: all .4s .3s ease-in;
+  overflow: auto; }
+
+body, html {
+  min-height: 100vh; }
+  body button, html button {
+    outline: none; }
+  body a:hover, html a:hover {
+    text-decoration: none; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+.header .nav-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20; }
+  .header .nav-wrapper .navbar-default {
+    background-color: rgba(0, 0, 0, 0.5); }
+    @media only screen and (min-width: 768px) {
+      .header .nav-wrapper .navbar-default {
+        border: 0;
+        border-radius: 0; } }
+    @media only screen and (max-width: 768px) {
+      .header .nav-wrapper .navbar-default {
+        background-color: #313131; } }
+    .header .nav-wrapper .navbar-default .navbar-nav > li > a, .header .nav-wrapper .navbar-default .navbar-default .navbar-text {
+      color: #fff; }
+    @media only screen and (min-width: 768px) {
+      .header .nav-wrapper .navbar-default .navbar-nav > li > a {
+        height: 70px;
+        padding-top: 24.5px;
+        padding-bottom: 24.5px; } }
+  .header .nav-wrapper .navbar-brand {
+    padding: 21.5px;
+    height: auto; }
+    .header .nav-wrapper .navbar-brand img {
+      height: 24px; }
+
+.nav ul {
+  list-style: none; }
+
+/*Start Landing Section*/
+.landing-cover .cover-wrapper {
+  background: url(../img/hero.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media only screen and (min-width: 1440px) {
+    .landing-cover .cover-wrapper {
+      background: url(../img/hero@2x.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
+
+.landing-cover .landing_text {
+  margin-top: 180px; }
+  .landing-cover .landing_text h1 {
+    font-family: "OpenSans", Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: -1px;
+    color: #333333; }
+    @media only screen and (max-width: 992px) {
+      .landing-cover .landing_text h1 {
+        font-size: 25px; } }
+  .landing-cover .landing_text p {
+    font-size: 28px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: #333333; }
+
+.landing-cover .landing_btn {
+  width: 215px;
+  height: 50px;
+  border-radius: 2px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(to bottom, #cf3f9e, #911c66);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  border: 0px solid #000000;
+  color: #fff;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: -0.4px;
+  text-align: center; }
+
+.landing-cover .landing_logo {
+  width: 325px;
+  height: 53px;
+  margin-top: 350px;
+  margin-bottom: 62px; }
+  @media only screen and (max-width: 480px) {
+    .landing-cover .landing_logo {
+      width: 290px; } }
+
+/*End Landing Section*/
+/*Start Top Destinations*/
+.top-destinations-section {
+  padding: 20px 0; }
+  .top-destinations-section h1 {
+    color: #000; }
+    .top-destinations-section h1:after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      bottom: -7px;
+      height: 6px;
+      background-color: rgba(35, 35, 35, 0.53);
+      width: 120px; }
+  .top-destinations-section .hotels-slider {
+    max-width: 1170px;
+    margin: 50px auto; }
+    .top-destinations-section .hotels-slider .item {
+      width: 230px;
+      height: 370px;
+      float: left;
+      opacity: 0.5;
+      position: relative;
+      overflow: hidden; }
+      .top-destinations-section .hotels-slider .item img {
+        width: 100%;
+        height: 100%; }
+      .top-destinations-section .hotels-slider .item .item-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px; }
+        .top-destinations-section .hotels-slider .item .item-info .city-name {
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.89; }
+        .top-destinations-section .hotels-slider .item .item-info .city-capital {
+          font-size: 15px;
+          display: block;
+          margin-bottom: 50px; }
+        .top-destinations-section .hotels-slider .item .item-info a .item-info_icon {
+          width: 37px;
+          height: 36px;
+          background-color: #81275a;
+          display: block;
+          text-align: center;
+          line-height: 35px;
+          font-size: 36px;
+          border-radius: 50%;
+          color: #fff;
+          position: relative;
+          left: 70%;
+          bottom: 29px; }
+        .top-destinations-section .hotels-slider .item .item-info .price-start {
+          font-size: 10px;
+          margin-bottom: 25px; }
+          .top-destinations-section .hotels-slider .item .item-info .price-start span {
+            font-weight: bold; }
+  .top-destinations-section .slider-arrows i {
+    font-size: 65px;
+    color: #fff;
+    margin-top: 30px; }
+
+/*End Top Destinations*/
+/*Start booking Section*/
+.booking {
+  position: relative;
+  padding: 35px 0;
+  /* Create a custom checkbox */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */ }
+  .booking h1 {
+    color: #fff; }
+    .booking h1:after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      bottom: -7px;
+      height: 6px;
+      background-color: #ffffff87;
+      width: 120px; }
+  .booking .booking_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/hero.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1; }
+  .booking .booking-wrapper {
+    background-color: rgba(85, 85, 85, 0.7);
+    border-radius: 4px;
+    margin: 70px auto;
+    padding: 20px;
+    color: #fff; }
+    .booking .booking-wrapper tabs > li.active > a, .booking .booking-wrapper .nav-tabs > li.active > a:focus, .booking .booking-wrapper .nav-tabs > li.active > a:hover {
+      color: #555;
+      cursor: default;
+      background-color: #f5f5f5a6;
+      /* border: 1px solid #ddd; */
+      border-radius: 4px 4px 0 0;
+      /* border-bottom-color: transparent; */
+      border-radius: 4px; }
+    .booking .booking-wrapper .nav-tabs {
+      border: 0;
+      margin-bottom: 10px; }
+    .booking .booking-wrapper .nav-tabs > li > a {
+      margin-right: 2px;
+      line-height: 1.42857143;
+      border: 1px solid transparent;
+      border-radius: 4px; }
+      .booking .booking-wrapper .nav-tabs > li > a .active {
+        background-color: #969696; }
+      .booking .booking-wrapper .nav-tabs > li > a:focus, .booking .booking-wrapper .nav-tabs > li > a:hover, .booking .booking-wrapper .nav-tabs > li > a:visited {
+        color: #fff;
+        background-color: #969696; }
+  .booking .flight-search-form-origin {
+    position: relative;
+    color: #81275a;
+    margin-bottom: 1px; }
+    .booking .flight-search-form-origin .flight-search-form-origin_input {
+      line-height: 1.6em;
+      font-size: 15px;
+      padding: 10px 10px 10px 35px;
+      width: 100%;
+      display: block;
+      -webkit-appearance: none;
+      height: 45px;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      border-radius: 4px 4px 0 0; }
+      .booking .flight-search-form-origin .flight-search-form-origin_input::-webkit-input-placeholder {
+        color: #969696; }
+      .booking .flight-search-form-origin .flight-search-form-origin_input:-ms-input-placeholder {
+        color: #969696; }
+      .booking .flight-search-form-origin .flight-search-form-origin_input::placeholder {
+        color: #969696; }
+    .booking .flight-search-form-origin .flight-search-form-origin_icon {
+      position: absolute;
+      top: 14px;
+      font-size: 20px;
+      left: 7px;
+      color: #969696; }
+    .booking .flight-search-form-origin .flight-search-form-origin_icon__active ~ i {
+      color: #81275a !important; }
+  .booking .flight-search-form-destination {
+    position: relative;
+    color: #81275a; }
+    .booking .flight-search-form-destination .flight-search-form-destination_input {
+      line-height: 1.6em;
+      font-size: 15px;
+      padding: 10px 10px 10px 35px;
+      width: 100%;
+      display: block;
+      -webkit-appearance: none;
+      height: 45px;
+      -moz-appearance: none;
+      appearance: none;
+      border: 0;
+      border-radius: 0 0 4px 4px; }
+      .booking .flight-search-form-destination .flight-search-form-destination_input::-webkit-input-placeholder {
+        color: #969696; }
+      .booking .flight-search-form-destination .flight-search-form-destination_input:-ms-input-placeholder {
+        color: #969696; }
+      .booking .flight-search-form-destination .flight-search-form-destination_input::placeholder {
+        color: #969696; }
+    .booking .flight-search-form-destination .flight-search-form-destination_icon {
+      position: absolute;
+      top: 14px;
+      font-size: 20px;
+      left: 9px;
+      color: #969696; }
+    .booking .flight-search-form-destination .flight-search-form-destination_icon__active ~ i {
+      color: #81275a !important; }
+  .booking .search-input-wrapper input:focus ~ .icon {
+    color: #81275a !important; }
+  .booking .checkbox-wrapper {
+    font-size: 12px;
+    font-weight: 400;
+    width: 85px;
+    position: absolute;
+    right: 5px;
+    color: #81275a;
+    cursor: pointer;
+    border-right: 0;
+    height: 33px;
+    vertical-align: middle;
+    top: 4px;
+    z-index: 0;
+    margin: 0 0 10px;
+    padding: 3px 30px 0 10px;
+    line-height: 16px; }
+  .booking .checkbox-wrapper input {
+    position: absolute;
+    display: none; }
+  .booking .checkmark {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #81275a;
+    border-radius: 2px; }
+  .booking .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  .booking .checkbox-wrapper input:checked ~ .checkmark:after {
+    display: block; }
+  .booking .checkbox-wrapper .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #81275a;
+    border-width: 0 3px 3px 0;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .booking .flight-type {
+    margin-bottom: 1px; }
+    .booking .flight-type .open > .dropdown-menu {
+      width: 100%; }
+    .booking .flight-type .dropdown-menu > li > a {
+      color: #81275a; }
+    .booking .flight-type .dropdown {
+      position: relative; }
+    .booking .flight-type .dropdown button {
+      width: 100%;
+      color: #81275a;
+      text-align: left;
+      position: relative;
+      border-radius: 4px 4px 0 0;
+      border: 0;
+      padding: 10px;
+      line-height: 1.6em;
+      font-size: 15px; }
+  @media only screen and (max-width: 992px) {
+    .booking .flight-options {
+      margin-top: 10px; } }
+  .booking .flight-options .drop-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -6px;
+    font-weight: bold; }
+  .booking .flight-options .passenger .open > .dropdown-menu {
+    width: 100%; }
+  .booking .flight-options .passenger .dropdown-menu > li > a {
+    color: #81275a; }
+  .booking .flight-options .passenger .dropdown {
+    position: relative; }
+  .booking .flight-options .passenger .dropdown button {
+    width: 100%;
+    color: #81275a;
+    text-align: left;
+    position: relative;
+    border-radius: 0 0 4px 4px;
+    border: 0;
+    padding: 10px;
+    line-height: 1.6em;
+    font-size: 15px; }
+  .booking .search-flights i {
+    position: absolute;
+    top: 20%;
+    font-size: 23px;
+    color: #fff;
+    left: 40%; }
+    @media only screen and (max-width: 992px) {
+      .booking .search-flights i {
+        position: relative;
+        font-size: 23px;
+        color: #fff;
+        top: 0;
+        left: 0; } }
+  .booking .search-flights_btn {
+    background: #81275a;
+    border: none;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    height: 91px;
+    margin: 0;
+    padding: 45px 0 0;
+    text-align: center;
+    width: 100%;
+    text-decoration: none !important;
+    border-radius: 4px; }
+    @media only screen and (max-width: 992px) {
+      .booking .search-flights_btn {
+        height: 45px;
+        margin-top: 10px;
+        padding-top: 8px; } }
+    .booking .search-flights_btn:visited {
+      color: #fff; }
+    .booking .search-flights_btn:hover {
+      color: #fff;
+      background: #a83375;
+      cursor: pointer; }
+  @media only screen and (max-width: 992px) {
+    .booking .date-input {
+      margin-top: 10px; } }
+  @media only screen and (min-width: 992px) {
+    .booking .date-input {
+      margin: 0 -10px; } }
+  .booking .date-input .date-input_range {
+    border: none;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 13px; }
+  .booking .date-input .date-day {
+    font-size: 32px;
+    line-height: 37px; }
+  .booking .date-input .date-icon {
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 60px;
+    color: #999; }
+  .booking .date-input .date-input_info {
+    border-radius: 4px;
+    background-color: #fff;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    height: 91px;
+    position: relative;
+    color: #81275a; }
+    .booking .date-input .date-input_info .date-month, .booking .date-input .date-input_info .date-year .date-day {
+      display: none; }
+    .booking .date-input .date-input_info .pre-start-date {
+      position: absolute;
+      bottom: 0;
+      color: #848383;
+      left: 50%;
+      margin-left: -28px;
+      display: block; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans-italic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+::-webkit-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icons/icomoon.eot?es2th9");
+  src: url("../icons/icomoon.eot?es2th9#iefix") format("embedded-opentype"), url("../icons/icomoon.ttf?es2th9") format("truetype"), url("../icons/icomoon.woff?es2th9") format("woff"), url("../icons/icomoon.svg?es2th9#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-keyboard_arrow_up:before {
+  content: "\e90b"; }
+
+.icon-keyboard_arrow_down:before {
+  content: "\e90c"; }
+
+.icon-keyboard_arrow_right:before {
+  content: "\e909"; }
+
+.icon-keyboard_arrow_left:before {
+  content: "\e90a"; }
+
+.icon-target:before {
+  content: "\e900"; }
+
+.icon-goal:before {
+  content: "\e900"; }
+
+.icon-location:before {
+  content: "\e900"; }
+
+.icon-search:before {
+  content: "\e90d"; }
+
+.icon-map-marker:before {
+  content: "\e901"; }
+
+.icon-calendar-o:before {
+  content: "\e902"; }
+
+.icon-instagram:before {
+  content: "\e903"; }
+
+.icon-twitter:before {
+  content: "\e904"; }
+
+.icon-linkedin:before {
+  content: "\e905"; }
+
+.icon-facebook:before {
+  content: "\e906"; }
+
+.icon-facebook-f:before {
+  content: "\e906"; }
+
+.icon-plane:before {
+  content: "\e907"; }
+
+.icon-bed:before {
+  content: "\e908"; }
+
+.icon-hotel:before {
+  content: "\e908"; }
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
